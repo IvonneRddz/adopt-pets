@@ -1,10 +1,9 @@
-import React from 'react';  //Siempre importar el react
-import ReactDOM from 'react-dom';  //es el que me inyecta codigo en el HTML, primero se importa lo de react
-import Title from './components/title/title'; //Se importan los comoponentes locales
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 import './scss/app.scss';
 
+import Home from './pages/home/home';
 
-ReactDOM.render(
- <Title title="algo" />, //es donde de cambia por JScript Sugar
- document.getElementById('app')     
-);
+
+ReactDOM.render(<Home />, document.getElementById('app'));

@@ -1,15 +1,7 @@
-import React from 'react'; //En todo archivo .js de componente debemos importar la libreria de react
-import './title.css';      //Importamos los estilos
+import React from 'react';
 
-//Componente tonto: no tiene logica, solo renderean, son componentes sin estados
-//Componente inteligentes: usa logica y estados 
+import './title.css';
 
-//Por default siempre solo debe haber un EXPORT, lo hace c/componente
-//Lo IMPORTA el APP.js
+const Title = ({ text }) => <h2 className="hp_Title">{text}</h2>;
 
-
-function Title(props) {
- return <div className="ir_Title">Titulo: {props.title}</div> //JScriptSugar
-};
-
-export default Title; //Exportamos para lanzarlo a APP.js
+export default Title;
